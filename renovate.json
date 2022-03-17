@@ -19,13 +19,6 @@
         "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release"
       }
     
-    ],
-    "packageRules": [
-        {
-            "datasources": ["github-releases"],
-            "managers": ["regex"],
-            "extractVersion": "^v(?<version>.*)$"
-        }
     ]
   }
   

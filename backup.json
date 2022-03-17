@@ -7,4 +7,12 @@
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release",
         "currentValueTemplate": "main"
-      }
+      },
+      
+   { "packageRules": [
+        {
+            "datasources": ["github-releases"],
+            "managers": ["regex"],
+            "extractVersion": "^v(?<version>.*)$"
+        }
+    ]
