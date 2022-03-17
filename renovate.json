@@ -1,0 +1,26 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "timezone": "Europe/Amsterdam",
+    "schedule": ["every weekday"],
+    "baseBranches": ["main"],
+    "gitAuthor": "RenovateBot <bot@me.com>",
+    "reviewers": [
+      "jp.schoombee@gmail.com"
+    ],
+    "regexManagers": [
+
+      {
+        "fileMatch": ["release\\.version$"],
+        "matchStrings": [
+          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
+        ],
+        "datasourceTemplate": "git-tags",
+        "versioningTemplate": "semver",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
+      }
+    ],
+    "packageRules": [
+     
+    ]
+  }
+  
