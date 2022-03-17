@@ -13,7 +13,7 @@
       {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
-          "^client: (?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
+          "^client: (?<currentValue>.+) # renovate: Environment=(?<depName>.*)"
         ],
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release",
