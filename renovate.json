@@ -17,7 +17,8 @@
         ],
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-        "currentValueTemplate": "develop"
+        "currentValueTemplate": "develop",
+        "versioningTemplate": "git"
 
 
       }
