@@ -11,15 +11,6 @@
     "regexManagers": [
 
       {
-        "fileMatch": ["release\\.version$"],
-        "matchStrings": [
-          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\r"
-        ],
-        "datasourceTemplate": "git-tags",
-        "versioningTemplate": "semver",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
-      },
-      {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
           "^client: (?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
