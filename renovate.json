@@ -17,12 +17,17 @@
         ],
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-        "currentValueTemplate": "main",
+        "depNameTemplate": "sha-checker",
         "versioningTemplate": "git"
-
-
       }
-    
-    ]
+   
+    ],
+    "packageRules": [
+   
+        {
+          "matchPackageNames": ["sha-checker"],
+          "matchBaseBranches": ["main"]
+         } 
+      ]
   }
   
