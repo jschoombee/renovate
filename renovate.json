@@ -18,7 +18,15 @@
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "semver",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
+      },
+      {
+        "fileMatch": ["release\\.version$"],  
+        "matchStrings": ["client: (?<currentDigest>.*)\r"],
+        "datasourceTemplate": "git-refs",
+        "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release",
+        "currentValueTemplate": "main"
       }
+    
     ],
     "packageRules": [
         {
