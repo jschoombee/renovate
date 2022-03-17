@@ -13,7 +13,7 @@
       {
         "fileMatch": ["release\\.version$"],
         "matchStrings": [
-          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
+          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\r"
         ],
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "semver",
