@@ -20,7 +20,11 @@
       }
     ],
     "packageRules": [
-     
+        {
+            "datasources": ["github-releases"],
+            "managers": ["regex"],
+            "extractVersion": "^v(?<version>.*)$"
+        }
     ]
   }
   
