@@ -16,7 +16,9 @@
           "^client: (?<currentValue>.+) # renovate: Environment=(?<depName>.*)"
         ],
         "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release"
+        "lookupNameTemplate": "https://leanpos@dev.azure.com/leanpos/LeanPos/_git/leanpos-release",
+        "versioningTemplate": "git"
+
       }
     
     ]
