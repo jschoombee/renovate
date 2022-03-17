@@ -25,13 +25,6 @@
     ],
     "packageRules": [
    
-        {
-          "datasources": ["github-releases"],
-          "matchPackageNames": ["sha-checker"],
-          "excludePackagePatterns": ["^eslint"],
-          "matchBaseBranches": ["main"]
-         }
-
       ]
   }
   
