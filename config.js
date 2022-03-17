@@ -1,7 +1,7 @@
 module.exports = {
     platform: 'github',
     gitAuthor: 'renovate-bot <renovate@jpson>',
-    enabledManagers: [ 'github-actions' ],
+    enabledManagers: [ 'regex' ],
     logLevel: 'debug',
     token: process.env.GITHUB_TOKEN,
     dependencyDashboardTitle: '[renovate-bot] Update Dependencies',
