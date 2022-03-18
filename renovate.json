@@ -13,7 +13,7 @@
       {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
-          "client: (?<currentDigest>.+) # renovate: depName=(?<depName>.*)\n"
+          "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
@@ -25,7 +25,7 @@
       {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
-          "services: (?<currentDigest>.+) # renovate: depName=(?<depName>.*)\n"
+          "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-refs",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
