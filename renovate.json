@@ -16,7 +16,7 @@
           "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
         ],
         "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git\n",
         "currentValueTemplate": "main",
         "versioningTemplate": "git",
         "depNameTemplate": "declarethumbwar"
@@ -28,7 +28,7 @@
           "^services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
         ],
         "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git\n",
         "currentValueTemplate": "main",
         "versioningTemplate": "git",
         "depNameTemplate": "declarethumbwar"
