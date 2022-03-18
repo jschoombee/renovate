@@ -13,10 +13,10 @@
       {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
-          "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+          "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git\n",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
         "currentValueTemplate": "main",
         "versioningTemplate": "git",
         "depNameTemplate": "declarethumbwar"
@@ -25,10 +25,10 @@
       {
         "fileMatch": ["release\\.version$"],  
         "matchStrings": [
-          "^services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+          "^services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git\n",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
         "currentValueTemplate": "main",
         "versioningTemplate": "git",
         "depNameTemplate": "declarethumbwar"
