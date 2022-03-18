@@ -1,7 +1,4 @@
-﻿#Merged2
-PS Z:\var\tmp\carlos> $env:LOG_LEVEL="debug"
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
+﻿DEBUG: Using RE2 as regex engine
 DEBUG: Parsing configs
 DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
 DEBUG: File config
@@ -65,14 +62,14 @@ DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
 DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
 DEBUG: Performing blobless clone (repository=jschoombee/renovate)
 DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1685
+       "durationMs": 2176
 DEBUG: latest repository commit (repository=jschoombee/renovate)
        "latestCommit": {
-         "hash": "d3bb4ce9a49c7e0f0b371a9defdc6510d09f2db7",
-         "date": "2022-03-17T13:57:50+01:00",
-         "message": "Merge pull request #3 from jschoombee/renovate/valhalla-whitelabel-dev-digest",
+         "hash": "fbba65f942d733e840afe635c92761a83057b897",
+         "date": "2022-03-17T17:12:31+01:00",
+         "message": "Merge pull request #9 from jschoombee/b2",
          "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "Update valhalla-whitelabel-dev digest to 241895e",
+         "body": "Update for the win",
          "author_name": "jschoombee",
          "author_email": "jpschoo@amazon.com"
        }
@@ -106,1637 +103,12 @@ DEBUG: Repository config (repository=jschoombee/renovate)
              ],
              "datasourceTemplate": "git-refs",
              "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T13:57:50+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 0 flattened updates found:  (repository=jschoombee/renovate)
-DEBUG: Returning 0 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "241895e846a068110f9c894928ff71ca3d3c9077",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 241895e846a068110f9c894928ff71ca3d3c9077 # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
-           }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 0 branches:  (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: Branch lists (repository=jschoombee/renovate)
-       "branchList": [],
-       "renovateBranches": ["renovate/valhalla-whitelabel-dev-digest"]
-DEBUG: remainingBranches=renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate)
-DEBUG: Retrieved 2 Pull Requests (repository=jschoombee/renovate)
-DEBUG: Branch has not been modified (repository=jschoombee/renovate)
-       "branchName": "renovate/valhalla-whitelabel-dev-digest"
- INFO: Deleting orphan branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Deleted remote branch (repository=jschoombee/renovate)
-       "branchName": "renovate/valhalla-whitelabel-dev-digest"
-DEBUG: No local branch to delete (repository=jschoombee/renovate)
-       "branchName": "renovate/valhalla-whitelabel-dev-digest"
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4338, "extract": 356, "lookup": 16, "update": 2},
-       "total": 7381
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 3,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 4, "requestAvgMs": 544, "queueAvgMs": 0}},
-       "totalRequests": 4
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 7381
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 2463
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "879e49503deac5a5c2401b6641bcd82c173b632e",
-         "date": "2022-03-17T14:00:12+01:00",
-         "message": "Update release.version",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "jschoombee",
-         "author_email": "jpschoo@amazon.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "25966705b1e44ec30ca43cdfde74f33258ec62fb",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 25966705b1e44ec30ca43cdfde74f33258ec62fb # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [
-                   {
-                     "updateType": "digest",
-                     "newValue": "main",
-                     "newDigest": "241895e846a068110f9c894928ff71ca3d3c9077",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
-                   }
-                 ],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
-           }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 2 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 241895e, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #3 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found closed PR with current title (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getOpenPrs(): no graphql data (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved closed PR list with graphql (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prNumbers": [1, 3]
-DEBUG: Returning from graphql closed PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Closed PR already exists. Skipping branch. (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 241895e"
-DEBUG: Merged PR is blocking this branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 3
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: No renovate branches found (repository=jschoombee/renovate)
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 7035, "extract": 372, "lookup": 36, "update": 1511},
-       "total": 8964
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 5,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 590, "queueAvgMs": 0}},
-       "totalRequests": 6
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 8964
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1779
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "879e49503deac5a5c2401b6641bcd82c173b632e",
-         "date": "2022-03-17T14:00:12+01:00",
-         "message": "Update release.version",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "jschoombee",
-         "author_email": "jpschoo@amazon.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "25966705b1e44ec30ca43cdfde74f33258ec62fb",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 25966705b1e44ec30ca43cdfde74f33258ec62fb # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [
-                   {
-                     "updateType": "digest",
-                     "newValue": "main",
-                     "newDigest": "241895e846a068110f9c894928ff71ca3d3c9077",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
-                   }
-                 ],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
-           }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 2 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 241895e, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #3 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found closed PR with current title (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getOpenPrs(): no graphql data (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved closed PR list with graphql (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prNumbers": [1, 3]
-DEBUG: Returning from graphql closed PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Closed PR already exists. Skipping branch. (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 241895e"
-DEBUG: Merged PR is blocking this branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 3
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: No renovate branches found (repository=jschoombee/renovate)
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4416, "extract": 406, "lookup": 41, "update": 1608},
-       "total": 6482
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 5,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 448, "queueAvgMs": 0}},
-       "totalRequests": 6
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 6482
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1632
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "879e49503deac5a5c2401b6641bcd82c173b632e",
-         "date": "2022-03-17T14:00:12+01:00",
-         "message": "Update release.version",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "jschoombee",
-         "author_email": "jpschoo@amazon.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "25966705b1e44ec30ca43cdfde74f33258ec62fb",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 25966705b1e44ec30ca43cdfde74f33258ec62fb # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [
-                   {
-                     "updateType": "digest",
-                     "newValue": "main",
-                     "newDigest": "241895e846a068110f9c894928ff71ca3d3c9077",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
-                   }
-                 ],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
-           }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:00:12+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 2 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 241895e, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #3 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found closed PR with current title (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getOpenPrs(): no graphql data (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved closed PR list with graphql (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prNumbers": [1, 3]
-DEBUG: Returning from graphql closed PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Closed PR already exists. Skipping branch. (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 241895e"
-DEBUG: Merged PR is blocking this branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 3
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: No renovate branches found (repository=jschoombee/renovate)
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4527, "extract": 333, "lookup": 37, "update": 1530},
-       "total": 6437
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 5,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 493, "queueAvgMs": 0}},
-       "totalRequests": 6
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 6437
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate | Out-File renovatedebug.log
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1826
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "7547e5880952666186d861425d8a486b434335a5",
-         "date": "2022-03-17T14:07:04+01:00",
-         "message": "Merge branch 'main' of https://github.com/jschoombee/renovate into main",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "JP Schoombee",
-         "author_email": "jean-pierre.schoombee@grandvision.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:07:04+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "25966705b1e44ec30ca43cdfde74f33258ec62fb",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 25966705b1e44ec30ca43cdfde74f33258ec62fb # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [
-                   {
-                     "updateType": "digest",
-                     "newValue": "main",
-                     "newDigest": "7547e5880952666186d861425d8a486b434335a5",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
-                   }
-                 ],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
-           }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:07:04+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 2 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 7547e58, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: prAlreadyExisted=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "timezone": "Europe/Amsterdam"
-DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "parsedSchedule": {"schedules": [{"d": [2, 3, 4, 5, 6]}], "exceptions": [], "error": -1}
-DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Branch needs creating (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Using reuseExistingBranch: false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Starting search at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Found match at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Contents updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Updated 1 package files (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: 1 file(s) to commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Preparing files for committing to branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Setting git author name (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "gitAuthorName": "RenovateBot"
-DEBUG: Setting git author email (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "gitAuthorEmail": "bot@me.com"
-DEBUG: git commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "deletedFiles": [],
-       "ignoredFiles": [],
-       "result": {
-         "author": null,
-         "branch": "renovate/valhalla-whitelabel-dev-digest",
-         "commit": "dddb9d8",
-         "root": false,
-         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
-       }
-DEBUG: Pushing branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: git push (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "result": {
-         "pushed": [
-           {
-             "deleted": false,
-             "tag": false,
-             "branch": true,
-             "new": true,
-             "alreadyUpdated": false,
-             "local": "refs/heads/renovate/valhalla-whitelabel-dev-digest",
-             "remote": "refs/heads/renovate/valhalla-whitelabel-dev-digest"
+             "versioningTemplate": "git",
+             "depNameTemplate": "sha-checker"
            }
          ],
-         "branch": {
-           "local": "renovate/valhalla-whitelabel-dev-digest",
-           "remote": "renovate/valhalla-whitelabel-dev-digest",
-           "remoteName": "origin"
-         },
-         "ref": {
-           "local": "refs/remotes/origin/renovate/valhalla-whitelabel-dev-digest"
-         },
-         "remoteMessages": {
-           "all": [
-             "Create a pull request for 'renovate/valhalla-whitelabel-dev-digest' on GitHub by visiting:",
-             "https://github.com/jschoombee/renovate/pull/new/renovate/valhalla-whitelabel-dev-digest"
-           ],
-           "pullRequestUrl": "https://github.com/jschoombee/renovate/pull/new/renovate/valhalla-whitelabel-dev-digest"
-         }
-       }
-DEBUG: Fetching branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
- INFO: Branch created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "commitSha": "dddb9d8bbd09fda142677d670e8cfe2e82a683dc"
-DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Creating PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 7547e58"
-DEBUG: Creating PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "title": "Update valhalla-whitelabel-dev digest to 7547e58",
-       "head": "jschoombee:renovate/valhalla-whitelabel-dev-digest",
-       "base": "main",
-       "draft": false
-DEBUG: PR created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 4,
-       "draft": false
-DEBUG: Adding labels '' to #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
- INFO: PR created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 4,
-       "prTitle": "Update valhalla-whitelabel-dev digest to 7547e58"
-DEBUG: addAssigneesReviewers(pr=4) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Adding reviewers 'jp.schoombee@gmail.com' to #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Added reviewers (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "reviewers": ["jp.schoombee@gmail.com"]
-DEBUG: Created Pull Request #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate)
-DEBUG: Found PR #4 (repository=jschoombee/renovate)
-DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate)
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: Branch lists (repository=jschoombee/renovate)
-       "branchList": ["renovate/valhalla-whitelabel-dev-digest"],
-       "renovateBranches": ["renovate/valhalla-whitelabel-dev-digest"]
-DEBUG: remainingBranches= (repository=jschoombee/renovate)
-DEBUG: No branches to clean up (repository=jschoombee/renovate)
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4337, "extract": 351, "lookup": 830, "update": 6382},
-       "total": 12747
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 4,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (POST)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls/4/requested_reviewers (POST)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 7, "requestAvgMs": 711, "queueAvgMs": 0}},
-       "totalRequests": 7
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 12747
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1712
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "7547e5880952666186d861425d8a486b434335a5",
-         "date": "2022-03-17T14:07:04+01:00",
-         "message": "Merge branch 'main' of https://github.com/jschoombee/renovate into main",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "JP Schoombee",
-         "author_email": "jean-pierre.schoombee@grandvision.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
+         "packageRules": []
        }
 DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
 DEBUG: Config migration necessary (repository=jschoombee/renovate)
@@ -1756,9 +128,12 @@ DEBUG: Config migration necessary (repository=jschoombee/renovate)
              ],
              "datasourceTemplate": "git-refs",
              "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git",
+             "depNameTemplate": "sha-checker"
            }
-         ]
+         ],
+         "packageRules": []
        },
        "newConfig": {
          "$schema": "https://docs.renovatebot.com/renovate-schema.json",
@@ -1775,332 +150,13 @@ DEBUG: Config migration necessary (repository=jschoombee/renovate)
                "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
              ],
              "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: massaged config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: migrated config (repository=jschoombee/renovate)
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "main"
-           }
-         ]
-       }
-DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
-       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: No vulnerability alerts found (repository=jschoombee/renovate)
-DEBUG: baseBranches (repository=jschoombee/renovate)
-       "baseBranches": ["main"]
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: extract() (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate)
-DEBUG: latest commit (repository=jschoombee/renovate)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:07:04+01:00"
-DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
-DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
-DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
- INFO: Dependency extraction complete (repository=jschoombee/renovate)
-       "baseBranch": "main",
-       "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
-       }
-DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value main (repository=jschoombee/renovate)
-DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
-       "baseBranch": "main"
-DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: packageFiles with updates (repository=jschoombee/renovate)
-       "config": {
-         "regex": [
-           {
-             "packageFile": "release.version",
-             "deps": [
-               {
-                 "depName": "valhalla-whitelabel-dev",
-                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "main",
-                 "currentDigest": "25966705b1e44ec30ca43cdfde74f33258ec62fb",
-                 "datasource": "git-refs",
-                 "replaceString": "client: 25966705b1e44ec30ca43cdfde74f33258ec62fb # renovate: Environment=valhalla-whitelabel-dev",
-                 "depIndex": 0,
-                 "updates": [
-                   {
-                     "updateType": "digest",
-                     "newValue": "main",
-                     "newDigest": "7547e5880952666186d861425d8a486b434335a5",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
-                   }
-                 ],
-                 "warnings": [],
-                 "versioning": "semver"
-               }
-             ],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "datasourceTemplate": "git-refs"
+             "versioningTemplate": "git",
+             "depNameTemplate": "sha-checker"
            }
-         ]
-       }
-DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
-DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
-       "prsRemaining": 99
-DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
-DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
-       "branchesRemaining": 99
-DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:07:04+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 3 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=true (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 7547e58, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found closed PR with current title (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getOpenPrs(): no graphql data (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved closed PR list with graphql (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prNumbers": [1, 3, 4]
-DEBUG: Returning from graphql closed PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Closed PR already exists. Skipping branch. (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 7547e58"
-DEBUG: Returning closed PR list comments (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Ensuring comment "Renovate Ignore Notification" in #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
- INFO: Comment added (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "issueNo": 4,
-       "topic": "Renovate Ignore Notification"
-DEBUG: Deleted remote branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "renovate/valhalla-whitelabel-dev-digest"
-DEBUG: No local branch to delete (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "branchName": "renovate/valhalla-whitelabel-dev-digest"
-DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
-DEBUG: Removing any stale branches (repository=jschoombee/renovate)
-DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
-DEBUG: No renovate branches found (repository=jschoombee/renovate)
-DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4258, "extract": 340, "lookup": 35, "update": 3709},
-       "total": 8354
-DEBUG: http statistics (repository=jschoombee/renovate)
-       "urls": {
-         "https://api.github.com/graphql (POST)": 5,
-         "https://api.github.com/repos/jschoombee/renovate/issues/4/comments (POST)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
-       },
-       "hostStats": {"api.github.com": {"requestCount": 7, "requestAvgMs": 492, "queueAvgMs": 0}},
-       "totalRequests": 7
- INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 8354
-DEBUG: Renovate exiting
-PS Z:\var\tmp\carlos> renovate
-DEBUG: Using RE2 as regex engine
-DEBUG: Parsing configs
-DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
-DEBUG: File config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"]
-       }
-DEBUG: CLI config
-       "config": {}
-DEBUG: Env config
-       "config": {"hostRules": []}
-DEBUG: Combined config
-       "config": {
-         "platform": "github",
-         "gitAuthor": "renovate-bot <renovate@jpson>",
-         "enabledManagers": ["regex"],
-         "logLevel": "debug",
-         "token": "***********",
-         "dependencyDashboardTitle": "[renovate-bot] Update Dependencies",
-         "repositories": ["jschoombee/renovate"],
-         "hostRules": []
-       }
-DEBUG: Found valid git version: 2.34.1.windows.1
-DEBUG: Using default github endpoint: https://api.github.com/
-DEBUG: Platform config
-       "platformConfig": {
-         "hostType": "github",
-         "endpoint": "https://api.github.com/",
-         "isGHApp": false,
-         "isGhe": false
-       },
-       "renovateUsername": "jschoombee"
-DEBUG: Using configured gitAuthor (renovate-bot <renovate@jpson>)
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: Using baseDir: C:/Users/jscho/AppData/Local/Temp/renovate
-DEBUG: Using cacheDir: C:/Users/jscho/AppData/Local/Temp/renovate/cache
-DEBUG: Initializing Renovate internal cache into C:/Users/jscho/AppData/Local/Temp/renovate/cache/renovate/renovate-cache-v1
-DEBUG: Commits limit = null
-DEBUG: Setting global hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
-DEBUG: validatePresets()
-DEBUG: Reinitializing hostRules for repo
-DEBUG: Clearing hostRules
-DEBUG: Adding token authentication for api.github.com to hostRules
- INFO: Repository started (repository=jschoombee/renovate)
-       "renovateVersion": "32.6.2"
-DEBUG: Using localDir: C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: initRepo("jschoombee/renovate") (repository=jschoombee/renovate)
-DEBUG: Overriding default GitHub endpoint (repository=jschoombee/renovate)
-       "endpoint": "https://api.github.com/"
-DEBUG: jschoombee/renovate default branch = main (repository=jschoombee/renovate)
-DEBUG: Using personal access token for git init (repository=jschoombee/renovate)
-DEBUG: resetMemCache() (repository=jschoombee/renovate)
-DEBUG: Resetting npmrc (repository=jschoombee/renovate)
-DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
-DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
-DEBUG: Performing blobless clone (repository=jschoombee/renovate)
-DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 1676
-DEBUG: latest repository commit (repository=jschoombee/renovate)
-       "latestCommit": {
-         "hash": "bd8e9231c5509392f499fcfad1e58230d022df16",
-         "date": "2022-03-17T14:15:31+01:00",
-         "message": "git",
-         "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "",
-         "author_name": "JP Schoombee",
-         "author_email": "jean-pierre.schoombee@grandvision.com"
-       }
-DEBUG: getCommitMessages (repository=jschoombee/renovate)
-DEBUG: Semantic commits detection: unknown (repository=jschoombee/renovate)
-DEBUG: No semantic commits detected (repository=jschoombee/renovate)
-DEBUG: checkOnboarding() (repository=jschoombee/renovate)
-DEBUG: isOnboarded() (repository=jschoombee/renovate)
-DEBUG: findFile(renovate.json) (repository=jschoombee/renovate)
-DEBUG: Config file exists (repository=jschoombee/renovate)
-       "fileName": "renovate.json"
-DEBUG: Retrieving issueList (repository=jschoombee/renovate)
-DEBUG: Retrieved 1 issues (repository=jschoombee/renovate)
-DEBUG: Repo is onboarded (repository=jschoombee/renovate)
-DEBUG: Found renovate.json config file (repository=jschoombee/renovate)
-DEBUG: Repository config (repository=jschoombee/renovate)
-       "fileName": "renovate.json",
-       "config": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
-             "versioningTemplate": "git"
-           }
-         ]
-       }
-DEBUG: migrateAndValidate() (repository=jschoombee/renovate)
-DEBUG: Config migration necessary (repository=jschoombee/renovate)
-       "oldConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
-             "versioningTemplate": "git"
-           }
-         ]
-       },
-       "newConfig": {
-         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-         "extends": ["regexManagers:dockerfileVersions"],
-         "timezone": "Europe/Amsterdam",
-         "schedule": ["every weekday"],
-         "baseBranches": ["main"],
-         "gitAuthor": "RenovateBot <bot@me.com>",
-         "reviewers": ["jp.schoombee@gmail.com"],
-         "regexManagers": [
-           {
-             "fileMatch": ["release\\.version$"],
-             "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
-             ],
-             "datasourceTemplate": "git-refs",
-             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
-             "versioningTemplate": "git"
-           }
-         ]
+         ],
+         "packageRules": []
        }
 DEBUG: massaged config (repository=jschoombee/renovate)
        "config": {
@@ -2119,10 +175,12 @@ DEBUG: massaged config (repository=jschoombee/renovate)
              ],
              "datasourceTemplate": "git-refs",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
-             "versioningTemplate": "git"
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git",
+             "depNameTemplate": "sha-checker"
            }
-         ]
+         ],
+         "packageRules": []
        }
 DEBUG: migrated config (repository=jschoombee/renovate)
        "config": {
@@ -2141,10 +199,12 @@ DEBUG: migrated config (repository=jschoombee/renovate)
              ],
              "datasourceTemplate": "git-refs",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
-             "versioningTemplate": "git"
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git",
+             "depNameTemplate": "sha-checker"
            }
-         ]
+         ],
+         "packageRules": []
        }
 DEBUG: Found repo ignorePaths (repository=jschoombee/renovate)
        "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
@@ -2157,7 +217,7 @@ DEBUG: extract() (repository=jschoombee/renovate)
 DEBUG: Setting current branch to main (repository=jschoombee/renovate)
 DEBUG: latest commit (repository=jschoombee/renovate)
        "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:15:31+01:00"
+       "latestCommitDate": "2022-03-17T17:12:31+01:00"
 DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
 DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
 DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
@@ -2172,11 +232,11 @@ DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
          "total": {"fileCount": 1, "depCount": 1}
        }
 DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency valhalla-whitelabel-dev has unsupported value develop (repository=jschoombee/renovate)
+DEBUG: Dependency sha-checker has unsupported value main (repository=jschoombee/renovate)
 DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
        "baseBranch": "main"
 DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: valhalla-whitelabel-dev (repository=jschoombee/renovate)
+DEBUG: 1 flattened updates found: sha-checker (repository=jschoombee/renovate)
 DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
 DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
 DEBUG: packageFiles with updates (repository=jschoombee/renovate)
@@ -2186,9 +246,9 @@ DEBUG: packageFiles with updates (repository=jschoombee/renovate)
              "packageFile": "release.version",
              "deps": [
                {
-                 "depName": "valhalla-whitelabel-dev",
+                 "depName": "sha-checker",
                  "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
-                 "currentValue": "develop",
+                 "currentValue": "main",
                  "currentDigest": "c740bacaa78ba7836823279b3bc86f360102e6f9",
                  "datasource": "git-refs",
                  "versioning": "git",
@@ -2197,9 +257,9 @@ DEBUG: packageFiles with updates (repository=jschoombee/renovate)
                  "updates": [
                    {
                      "updateType": "digest",
-                     "newValue": "develop",
-                     "newDigest": "259e59c339e3bd5d4a898a766b39fe3249999373",
-                     "branchName": "renovate/valhalla-whitelabel-dev-digest"
+                     "newValue": "main",
+                     "newDigest": "fbba65f942d733e840afe635c92761a83057b897",
+                     "branchName": "renovate/sha-checker-digest"
                    }
                  ],
                  "warnings": []
@@ -2208,154 +268,134 @@ DEBUG: packageFiles with updates (repository=jschoombee/renovate)
              "matchStrings": [
                "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
              ],
+             "depNameTemplate": "sha-checker",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
-             "currentValueTemplate": "develop",
+             "currentValueTemplate": "main",
              "datasourceTemplate": "git-refs",
              "versioningTemplate": "git"
            }
          ]
        }
 DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate)
+DEBUG: Processing 1 branch: renovate/sha-checker-digest (repository=jschoombee/renovate)
 DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
        "prsRemaining": 99
 DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
 DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
        "branchesRemaining": 99
 DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "branchName": "main",
-       "latestCommitDate": "2022-03-17T14:15:31+01:00"
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Retrieved 3 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: branchExists=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: recreateClosed is false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, Update valhalla-whitelabel-dev digest to 259e59c, !open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: prAlreadyExisted=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+       "latestCommitDate": "2022-03-17T17:12:31+01:00"
+DEBUG: getBranchPr(renovate/sha-checker-digest) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: findPr(renovate/sha-checker-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Retrieved 8 Pull Requests (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Found PR #8 (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: branchExists=true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: PR rebase requested=false (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Checking if PR has been edited (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Branch has not been modified (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "branchName": "renovate/sha-checker-digest"
+DEBUG: Found existing branch PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "timezone": "Europe/Amsterdam"
-DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "parsedSchedule": {"schedules": [{"d": [2, 3, 4, 5, 6]}], "exceptions": [], "error": -1}
-DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Branch needs creating (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Using reuseExistingBranch: false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Starting search at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Found match at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Contents updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-whitelabel-dev-digest)
-       "depName": "valhalla-whitelabel-dev"
-DEBUG: Updated 1 package files (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: 1 file(s) to commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Preparing files for committing to branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Setting git author name (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Branch already exists (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: GitHub 404 (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "url": "repos/jschoombee/renovate/branches/main/protection"
+DEBUG: No branch protection found (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Skipping stale branch check due to rebaseWhen=auto (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: isBranchConflicted(main, renovate/sha-checker-digest) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Setting git author name (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "gitAuthorName": "RenovateBot"
-DEBUG: Setting git author email (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Setting git author email (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "gitAuthorEmail": "bot@me.com"
-DEBUG: git commit (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Branch does not need rebasing (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Using reuseExistingBranch: true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Rebasing after outdated branch dep found (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
+       "depName": "sha-checker"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Starting search at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
+       "depName": "sha-checker"
+DEBUG: Found match at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
+       "depName": "sha-checker"
+DEBUG: Contents updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
+       "depName": "sha-checker"
+DEBUG: Updated 1 package files (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: 1 file(s) to commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Preparing files for committing to branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: git commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "deletedFiles": [],
        "ignoredFiles": [],
        "result": {
          "author": null,
-         "branch": "renovate/valhalla-whitelabel-dev-digest",
-         "commit": "864e40b",
+         "branch": "renovate/sha-checker-digest",
+         "commit": "23ee50c",
          "root": false,
          "summary": {"changes": 1, "insertions": 1, "deletions": 1}
        }
-DEBUG: Pushing branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: git push (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
+DEBUG: Pushing branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: git push (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
        "result": {
-         "pushed": [
-           {
-             "deleted": false,
-             "tag": false,
-             "branch": true,
-             "new": true,
-             "alreadyUpdated": false,
-             "local": "refs/heads/renovate/valhalla-whitelabel-dev-digest",
-             "remote": "refs/heads/renovate/valhalla-whitelabel-dev-digest"
-           }
-         ],
+         "pushed": [],
          "branch": {
-           "local": "renovate/valhalla-whitelabel-dev-digest",
-           "remote": "renovate/valhalla-whitelabel-dev-digest",
+           "local": "renovate/sha-checker-digest",
+           "remote": "renovate/sha-checker-digest",
            "remoteName": "origin"
          },
-         "ref": {
-           "local": "refs/remotes/origin/renovate/valhalla-whitelabel-dev-digest"
-         },
-         "remoteMessages": {
-           "all": [
-             "Create a pull request for 'renovate/valhalla-whitelabel-dev-digest' on GitHub by visiting:",
-             "https://github.com/jschoombee/renovate/pull/new/renovate/valhalla-whitelabel-dev-digest"
-           ],
-           "pullRequestUrl": "https://github.com/jschoombee/renovate/pull/new/renovate/valhalla-whitelabel-dev-digest"
-         }
+         "ref": {"local": "refs/remotes/origin/renovate/sha-checker-digest"},
+         "remoteMessages": {"all": []}
        }
-DEBUG: Fetching branch renovate/valhalla-whitelabel-dev-digest (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
- INFO: Branch created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "commitSha": "864e40b359439a242d87a04ff63edb2930f3d0ae"
-DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, closed) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Found PR #4 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Creating PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "prTitle": "Update valhalla-whitelabel-dev digest to 259e59c"
-DEBUG: Creating PR (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "title": "Update valhalla-whitelabel-dev digest to 259e59c",
-       "head": "jschoombee:renovate/valhalla-whitelabel-dev-digest",
-       "base": "main",
-       "draft": false
-DEBUG: PR created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 5,
-       "draft": false
-DEBUG: Adding labels '' to #5 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
- INFO: PR created (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "pr": 5,
-       "prTitle": "Update valhalla-whitelabel-dev digest to 259e59c"
-DEBUG: addAssigneesReviewers(pr=5) (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Adding reviewers 'jp.schoombee@gmail.com' to #5 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: Added reviewers (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-       "reviewers": ["jp.schoombee@gmail.com"]
-DEBUG: Created Pull Request #5 (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/valhalla-whitelabel-dev-digest)
-DEBUG: getBranchPr(renovate/valhalla-whitelabel-dev-digest) (repository=jschoombee/renovate)
-DEBUG: findPr(renovate/valhalla-whitelabel-dev-digest, undefined, open) (repository=jschoombee/renovate)
-DEBUG: Found PR #5 (repository=jschoombee/renovate)
-DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate)
+DEBUG: Fetching branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+ INFO: Branch updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "commitSha": "23ee50c8ce1184a1db7598cb14296fb8d18f6966"
+DEBUG: Checking if we can automerge branch (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: mergeStatus=no automerge (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Found existing PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Processing existing PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: PR title changed (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "branchName": "renovate/sha-checker-digest",
+       "oldPrTitle": "Update sha-checker digest to 2d9624a",
+       "newPrTitle": "Update sha-checker digest to fbba65f"
+DEBUG: updatePr(8, Update sha-checker digest to fbba65f, body) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: PR updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "pr": 8
+ INFO: PR updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "pr": 8,
+       "prTitle": "Update sha-checker digest to fbba65f"
+DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
 DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
 DEBUG: Removing any stale branches (repository=jschoombee/renovate)
 DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
 DEBUG: Branch lists (repository=jschoombee/renovate)
-       "branchList": ["renovate/valhalla-whitelabel-dev-digest"],
-       "renovateBranches": ["renovate/valhalla-whitelabel-dev-digest"]
+       "branchList": ["renovate/sha-checker-digest"],
+       "renovateBranches": ["renovate/sha-checker-digest"]
 DEBUG: remainingBranches= (repository=jschoombee/renovate)
 DEBUG: No branches to clean up (repository=jschoombee/renovate)
 DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 4099, "extract": 355, "lookup": 37, "update": 5340},
-       "total": 10359
+       "splits": {"init": 5848, "extract": 392, "lookup": 812, "update": 8475},
+       "total": 15596
 DEBUG: http statistics (repository=jschoombee/renovate)
        "urls": {
          "https://api.github.com/graphql (POST)": 4,
          "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (POST)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls/5/requested_reviewers (POST)": 1
+         "https://api.github.com/repos/jschoombee/renovate/pulls/8 (PATCH)": 1
        },
-       "hostStats": {"api.github.com": {"requestCount": 7, "requestAvgMs": 587, "queueAvgMs": 0}},
-       "totalRequests": 7
+       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 683, "queueAvgMs": 0}},
+       "totalRequests": 6
  INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 10359
+       "durationMs": 15596
 DEBUG: Renovate exiting
