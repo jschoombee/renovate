@@ -19,12 +19,24 @@
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
         "currentValueTemplate": "main",
         "versioningTemplate": "git",
-        "depNameTemplate": "sha-checker"
+        "depNameTemplate": "declarethumbwar"
+      },
+
+      {
+        "fileMatch": ["release\\.version$"],  
+        "matchStrings": [
+          "^services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+        ],
+        "datasourceTemplate": "git-refs",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+        "currentValueTemplate": "main",
+        "versioningTemplate": "git",
+        "depNameTemplate": "declarethumbwar"
       }
    
     ],
     "packageRules": [
-   
+        
       ]
   }
   
