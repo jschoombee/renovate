@@ -1,3 +1,3 @@
-services: f4afecf89ce8503370b0ff37580749e7f497e593 # renovate: Environment=valhalla-test-services
-client: f4afecf89ce8503370b0ff37580749e7f497e593 # renovate: Environment=valhalla-test-client
+services: 261454c971d543e3868171d1eda1f0f9f28869c4 # renovate: Environment=valhalla-test-services
+client: 261454c971d543e3868171d1eda1f0f9f28869c4  # renovate: Environment=valhalla-test-client
 
