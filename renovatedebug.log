@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ﻿DEBUG: Using RE2 as regex engine
+=======
+﻿#Merged3
+PS Z:\var\tmp\carlos> $env:LOG_LEVEL="debug"
+PS Z:\var\tmp\carlos> renovate
+DEBUG: Using RE2 as regex engine
+>>>>>>> fbba65f942d733e840afe635c92761a83057b897
 DEBUG: Parsing configs
 DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
 DEBUG: File config
