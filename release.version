@@ -1,2 +1,2 @@
-client: c740bacaa78ba7836823279b3bc86f360102e6f9 # renovate: Environment=valhalla-dev
-services: ffc5e4b8c0464def44144b81363c13d4dc18cc8e # renovate: Environment=valhalla-dev
+client: c740bacaa78ba7836823279b3bc86f360102e6f9 # renovate: depName=valhalla-test-client
+services: ffc5e4b8c0464def44144b81363c13d4dc18cc8e # renovate: depName=valhalla-test-services
