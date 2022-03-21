@@ -34,7 +34,10 @@
    
     ],
     "packageRules": [
-        
+        {
+          "matchDatasources": ["git-refs"],
+          "addLabels": ["latest-unstable"]
+        }
       ]
   }
   

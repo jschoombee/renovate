@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-﻿DEBUG: Using RE2 as regex engine
-=======
-﻿#Merged3
-PS Z:\var\tmp\carlos> $env:LOG_LEVEL="debug"
 PS Z:\var\tmp\carlos> renovate
 DEBUG: Using RE2 as regex engine
->>>>>>> fbba65f942d733e840afe635c92761a83057b897
 DEBUG: Parsing configs
 DEBUG: Checking for config file in Z:\var\tmp\carlos/config.js
 DEBUG: File config
@@ -69,14 +63,14 @@ DEBUG: detectSemanticCommits() (repository=jschoombee/renovate)
 DEBUG: Initializing git repository into C:/Users/jscho/AppData/Local/Temp/renovate/repos/github/jschoombee/renovate (repository=jschoombee/renovate)
 DEBUG: Performing blobless clone (repository=jschoombee/renovate)
 DEBUG: git clone completed (repository=jschoombee/renovate)
-       "durationMs": 2176
+       "durationMs": 1340
 DEBUG: latest repository commit (repository=jschoombee/renovate)
        "latestCommit": {
-         "hash": "fbba65f942d733e840afe635c92761a83057b897",
-         "date": "2022-03-17T17:12:31+01:00",
-         "message": "Merge pull request #9 from jschoombee/b2",
+         "hash": "d50086bbb7c22681466506fc189e1143721cb69e",
+         "date": "2022-03-18T14:09:30+01:00",
+         "message": "Merge pull request #17 from jschoombee/wara",
          "refs": "HEAD -> main, origin/main, origin/HEAD",
-         "body": "Update for the win",
+         "body": "wara",
          "author_name": "jschoombee",
          "author_email": "jpschoo@amazon.com"
        }
@@ -106,13 +100,22 @@ DEBUG: Repository config (repository=jschoombee/renovate)
            {
              "fileMatch": ["release\\.version$"],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
              "datasourceTemplate": "git-refs",
              "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "versioningTemplate": "git",
-             "depNameTemplate": "sha-checker"
+             "versioningTemplate": "git"
+           },
+           {
+             "fileMatch": ["release\\.version$"],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
+             "datasourceTemplate": "git-refs",
+             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git"
            }
          ],
          "packageRules": []
@@ -131,13 +134,22 @@ DEBUG: Config migration necessary (repository=jschoombee/renovate)
            {
              "fileMatch": ["release\\.version$"],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
              "datasourceTemplate": "git-refs",
              "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "versioningTemplate": "git",
-             "depNameTemplate": "sha-checker"
+             "versioningTemplate": "git"
+           },
+           {
+             "fileMatch": ["release\\.version$"],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
+             "datasourceTemplate": "git-refs",
+             "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git"
            }
          ],
          "packageRules": []
@@ -154,13 +166,22 @@ DEBUG: Config migration necessary (repository=jschoombee/renovate)
            {
              "fileMatch": ["release\\.version$"],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
              "datasourceTemplate": "git-refs",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "versioningTemplate": "git",
-             "depNameTemplate": "sha-checker"
+             "versioningTemplate": "git"
+           },
+           {
+             "fileMatch": ["release\\.version$"],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
+             "datasourceTemplate": "git-refs",
+             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git"
            }
          ],
          "packageRules": []
@@ -178,13 +199,22 @@ DEBUG: massaged config (repository=jschoombee/renovate)
            {
              "fileMatch": ["release\\.version$"],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
              "datasourceTemplate": "git-refs",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "versioningTemplate": "git",
-             "depNameTemplate": "sha-checker"
+             "versioningTemplate": "git"
+           },
+           {
+             "fileMatch": ["release\\.version$"],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
+             "datasourceTemplate": "git-refs",
+             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git"
            }
          ],
          "packageRules": []
@@ -202,13 +232,22 @@ DEBUG: migrated config (repository=jschoombee/renovate)
            {
              "fileMatch": ["release\\.version$"],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
              "datasourceTemplate": "git-refs",
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
-             "versioningTemplate": "git",
-             "depNameTemplate": "sha-checker"
+             "versioningTemplate": "git"
+           },
+           {
+             "fileMatch": ["release\\.version$"],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
+             "datasourceTemplate": "git-refs",
+             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "versioningTemplate": "git"
            }
          ],
          "packageRules": []
@@ -224,27 +263,31 @@ DEBUG: extract() (repository=jschoombee/renovate)
 DEBUG: Setting current branch to main (repository=jschoombee/renovate)
 DEBUG: latest commit (repository=jschoombee/renovate)
        "branchName": "main",
-       "latestCommitDate": "2022-03-17T17:12:31+01:00"
+       "latestCommitDate": "2022-03-18T14:09:30+01:00"
 DEBUG: Applying enabledManagers filtering (repository=jschoombee/renovate)
 DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager regex (repository=jschoombee/renovate)
 DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager regex (repository=jschoombee/renovate)
 DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
+DEBUG: Using file match: release\.version$ for manager regex (repository=jschoombee/renovate)
+DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
 DEBUG: Matched 2 file(s) for manager regex: release.version, test/release.version (repository=jschoombee/renovate)
 DEBUG: Found regex package files (repository=jschoombee/renovate)
-DEBUG: Found 1 package file(s) (repository=jschoombee/renovate)
+DEBUG: Found regex package files (repository=jschoombee/renovate)
+DEBUG: Found 2 package file(s) (repository=jschoombee/renovate)
  INFO: Dependency extraction complete (repository=jschoombee/renovate)
        "baseBranch": "main",
        "stats": {
-         "managers": {"regex": {"fileCount": 1, "depCount": 1}},
-         "total": {"fileCount": 1, "depCount": 1}
+         "managers": {"regex": {"fileCount": 2, "depCount": 2}},
+         "total": {"fileCount": 2, "depCount": 2}
        }
 DEBUG: baseBranch: main (repository=jschoombee/renovate)
-DEBUG: Dependency sha-checker has unsupported value main (repository=jschoombee/renovate)
+DEBUG: Dependency valhalla-test-client has unsupported value main (repository=jschoombee/renovate)
+DEBUG: Dependency valhalla-test-services has unsupported value main (repository=jschoombee/renovate)
 DEBUG: Package releases lookups complete (repository=jschoombee/renovate)
        "baseBranch": "main"
 DEBUG: branchifyUpgrades (repository=jschoombee/renovate)
-DEBUG: 1 flattened updates found: sha-checker (repository=jschoombee/renovate)
-DEBUG: Returning 1 branch(es) (repository=jschoombee/renovate)
+DEBUG: 2 flattened updates found: valhalla-test-client, valhalla-test-services (repository=jschoombee/renovate)
+DEBUG: Returning 2 branch(es) (repository=jschoombee/renovate)
 DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
 DEBUG: packageFiles with updates (repository=jschoombee/renovate)
        "config": {
@@ -253,29 +296,59 @@ DEBUG: packageFiles with updates (repository=jschoombee/renovate)
              "packageFile": "release.version",
              "deps": [
                {
-                 "depName": "sha-checker",
+                 "depName": "valhalla-test-client",
                  "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
                  "currentValue": "main",
-                 "currentDigest": "c740bacaa78ba7836823279b3bc86f360102e6f9",
+                 "currentDigest": "d8fcf9e1c1ab7e53fba8e2177bb5f2dbba51e2be ",
                  "datasource": "git-refs",
                  "versioning": "git",
-                 "replaceString": "client: c740bacaa78ba7836823279b3bc86f360102e6f9 # renovate: Environment=valhalla-whitelabel-dev",
+                 "replaceString": "client: d8fcf9e1c1ab7e53fba8e2177bb5f2dbba51e2be  # renovate: Environment=valhalla-test-client\n",
                  "depIndex": 0,
                  "updates": [
                    {
                      "updateType": "digest",
                      "newValue": "main",
-                     "newDigest": "fbba65f942d733e840afe635c92761a83057b897",
-                     "branchName": "renovate/sha-checker-digest"
+                     "newDigest": "d50086bbb7c22681466506fc189e1143721cb69e",
+                     "branchName": "renovate/valhalla-test-client-digest"
                    }
                  ],
                  "warnings": []
                }
              ],
              "matchStrings": [
-               "^client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)"
+               "client: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
              ],
-             "depNameTemplate": "sha-checker",
+             "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
+             "currentValueTemplate": "main",
+             "datasourceTemplate": "git-refs",
+             "versioningTemplate": "git"
+           },
+           {
+             "packageFile": "release.version",
+             "deps": [
+               {
+                 "depName": "valhalla-test-services",
+                 "packageName": "https://jschoombee@github.com/jschoombee/renovate.git",
+                 "currentValue": "main",
+                 "currentDigest": "d8fcf9e1c1ab7e53fba8e2177bb5f2dbba51e2be",
+                 "datasource": "git-refs",
+                 "versioning": "git",
+                 "replaceString": "services: d8fcf9e1c1ab7e53fba8e2177bb5f2dbba51e2be # renovate: Environment=valhalla-test-services\n",
+                 "depIndex": 0,
+                 "updates": [
+                   {
+                     "updateType": "digest",
+                     "newValue": "main",
+                     "newDigest": "d50086bbb7c22681466506fc189e1143721cb69e",
+                     "branchName": "renovate/valhalla-test-services-digest"
+                   }
+                 ],
+                 "warnings": []
+               }
+             ],
+             "matchStrings": [
+               "services: (?<currentDigest>.+) # renovate: Environment=(?<depName>.*)\n"
+             ],
              "packageNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git",
              "currentValueTemplate": "main",
              "datasourceTemplate": "git-refs",
@@ -284,125 +357,134 @@ DEBUG: packageFiles with updates (repository=jschoombee/renovate)
          ]
        }
 DEBUG: processRepo() (repository=jschoombee/renovate)
-DEBUG: Processing 1 branch: renovate/sha-checker-digest (repository=jschoombee/renovate)
+DEBUG: Processing 2 branches: renovate/valhalla-test-client-digest, renovate/valhalla-test-services-digest (repository=jschoombee/renovate)
 DEBUG: Calculated maximum PRs remaining this run (repository=jschoombee/renovate)
        "prsRemaining": 99
 DEBUG: PullRequests limit = 99 (repository=jschoombee/renovate)
 DEBUG: Calculated maximum branches remaining this run (repository=jschoombee/renovate)
        "branchesRemaining": 99
 DEBUG: Branches limit = 99 (repository=jschoombee/renovate)
-DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "branchName": "main",
-       "latestCommitDate": "2022-03-17T17:12:31+01:00"
-DEBUG: getBranchPr(renovate/sha-checker-digest) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: findPr(renovate/sha-checker-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Retrieved 8 Pull Requests (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Found PR #8 (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: branchExists=true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: PR rebase requested=false (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Checking if PR has been edited (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Branch has not been modified (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "branchName": "renovate/sha-checker-digest"
-DEBUG: Found existing branch PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+       "latestCommitDate": "2022-03-18T14:09:30+01:00"
+DEBUG: getBranchPr(renovate/valhalla-test-client-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: findPr(renovate/valhalla-test-client-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Retrieving PR list (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Retrieved 16 Pull Requests (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Found PR #13 (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: branchExists=true (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: PR rebase requested=false (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Checking if PR has been edited (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Branch has not been modified (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+       "branchName": "renovate/valhalla-test-client-digest"
+DEBUG: Found existing branch PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "timezone": "Europe/Amsterdam"
-DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "parsedSchedule": {"schedules": [{"d": [2, 3, 4, 5, 6]}], "exceptions": [], "error": -1}
-DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Branch already exists (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: GitHub 404 (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Branch already exists (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: GitHub 404 (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "url": "repos/jschoombee/renovate/branches/main/protection"
-DEBUG: No branch protection found (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Skipping stale branch check due to rebaseWhen=auto (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: isBranchConflicted(main, renovate/sha-checker-digest) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Setting git author name (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: No branch protection found (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Skipping stale branch check due to rebaseWhen=auto (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: isBranchConflicted(main, renovate/valhalla-test-client-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Setting git author name (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "gitAuthorName": "RenovateBot"
-DEBUG: Setting git author email (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Setting git author email (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
        "gitAuthorEmail": "bot@me.com"
-DEBUG: Branch does not need rebasing (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Using reuseExistingBranch: true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Rebasing after outdated branch dep found (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
-       "depName": "sha-checker"
-DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Starting search at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
-       "depName": "sha-checker"
-DEBUG: Found match at index 0 (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
-       "depName": "sha-checker"
-DEBUG: Contents updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/sha-checker-digest)
-       "depName": "sha-checker"
-DEBUG: Updated 1 package files (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: 1 file(s) to commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Preparing files for committing to branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: git commit (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "deletedFiles": [],
-       "ignoredFiles": [],
-       "result": {
-         "author": null,
-         "branch": "renovate/sha-checker-digest",
-         "commit": "23ee50c",
-         "root": false,
-         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
-       }
-DEBUG: Pushing branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: git push (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "result": {
-         "pushed": [],
-         "branch": {
-           "local": "renovate/sha-checker-digest",
-           "remote": "renovate/sha-checker-digest",
-           "remoteName": "origin"
-         },
-         "ref": {"local": "refs/remotes/origin/renovate/sha-checker-digest"},
-         "remoteMessages": {"all": []}
-       }
-DEBUG: Fetching branch renovate/sha-checker-digest (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
- INFO: Branch updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "commitSha": "23ee50c8ce1184a1db7598cb14296fb8d18f6966"
-DEBUG: Checking if we can automerge branch (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: mergeStatus=no automerge (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Found existing PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: Processing existing PR (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: PR title changed (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "branchName": "renovate/sha-checker-digest",
-       "oldPrTitle": "Update sha-checker digest to 2d9624a",
-       "newPrTitle": "Update sha-checker digest to fbba65f"
-DEBUG: updatePr(8, Update sha-checker digest to fbba65f, body) (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-DEBUG: PR updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "pr": 8
- INFO: PR updated (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
-       "pr": 8,
-       "prTitle": "Update sha-checker digest to fbba65f"
-DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/sha-checker-digest)
+DEBUG: Branch does not need rebasing (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Using reuseExistingBranch: true (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Branch dep is already updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-test-client-digest)
+       "depName": "valhalla-test-client"
+DEBUG: No content changed (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-test-client-digest)
+       "depName": "valhalla-test-client"
+DEBUG: No package files need updating (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: No files to commit (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Checking if we can automerge branch (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: mergeStatus=no automerge (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Found existing PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Processing existing PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Pull Request #13 does not need updating (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/valhalla-test-client-digest)
+DEBUG: Setting current branch to main (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: latest commit (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+       "branchName": "main",
+       "latestCommitDate": "2022-03-18T14:09:30+01:00"
+DEBUG: getBranchPr(renovate/valhalla-test-services-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: findPr(renovate/valhalla-test-services-digest, undefined, open) (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Found PR #14 (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Returning from graphql open PR list (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: branchExists=true (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: dependencyDashboardCheck=undefined (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: PR rebase requested=false (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Checking if PR has been edited (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Branch has not been modified (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+       "branchName": "renovate/valhalla-test-services-digest"
+DEBUG: Found existing branch PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Checking schedule(every weekday, Europe/Amsterdam) (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Found timezone (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+       "timezone": "Europe/Amsterdam"
+DEBUG: Adjusting now for timezone (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Checking 1 schedule(s) (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Checking schedule "every weekday" (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+       "parsedSchedule": {"schedules": [{"d": [2, 3, 4, 5, 6]}], "exceptions": [], "error": -1}
+DEBUG: Matches schedule every weekday (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Branch already exists (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Skipping stale branch check due to rebaseWhen=auto (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: isBranchConflicted(main, renovate/valhalla-test-services-digest) (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Branch does not need rebasing (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Using reuseExistingBranch: true (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Branch dep is already updated (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-test-services-digest)
+       "depName": "valhalla-test-services"
+DEBUG: No content changed (repository=jschoombee/renovate, packageFile=release.version, branch=renovate/valhalla-test-services-digest)
+       "depName": "valhalla-test-services"
+DEBUG: No package files need updating (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: No updated lock files in branch (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: No files to commit (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Checking if we can automerge branch (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: mergeStatus=no automerge (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Ensuring PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: There are 0 errors and 0 warnings (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Found existing PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Processing existing PR (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: Pull Request #14 does not need updating (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
+DEBUG: PR is not configured for automerge (repository=jschoombee/renovate, branch=renovate/valhalla-test-services-digest)
 DEBUG: Closing Dependency Dashboard (repository=jschoombee/renovate)
 DEBUG: Removing any stale branches (repository=jschoombee/renovate)
 DEBUG: config.repoIsOnboarded=true (repository=jschoombee/renovate)
 DEBUG: Branch lists (repository=jschoombee/renovate)
-       "branchList": ["renovate/sha-checker-digest"],
-       "renovateBranches": ["renovate/sha-checker-digest"]
+       "branchList": [
+         "renovate/valhalla-test-client-digest",
+         "renovate/valhalla-test-services-digest"
+       ],
+       "renovateBranches": [
+         "renovate/valhalla-test-client-digest",
+         "renovate/valhalla-test-services-digest"
+       ]
 DEBUG: remainingBranches= (repository=jschoombee/renovate)
 DEBUG: No branches to clean up (repository=jschoombee/renovate)
 DEBUG: Repository timing splits (milliseconds) (repository=jschoombee/renovate)
-       "splits": {"init": 5848, "extract": 392, "lookup": 812, "update": 8475},
-       "total": 15596
+       "splits": {"init": 3668, "extract": 486, "lookup": 650, "update": 3614},
+       "total": 8574
 DEBUG: http statistics (repository=jschoombee/renovate)
        "urls": {
          "https://api.github.com/graphql (POST)": 4,
-         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1,
-         "https://api.github.com/repos/jschoombee/renovate/pulls/8 (PATCH)": 1
+         "https://api.github.com/repos/jschoombee/renovate/pulls (GET)": 1
        },
-       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 683, "queueAvgMs": 0}},
-       "totalRequests": 6
+       "hostStats": {"api.github.com": {"requestCount": 5, "requestAvgMs": 290, "queueAvgMs": 0}},
+       "totalRequests": 5
  INFO: Repository finished (repository=jschoombee/renovate)
-       "durationMs": 15596
+       "durationMs": 8574
 DEBUG: Renovate exiting
