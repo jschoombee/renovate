@@ -30,13 +30,31 @@
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate-source-sample.git",
         "currentValueTemplate": "develop",
         "versioningTemplate": "git"
+      },
+      {
+        "fileMatch": ["release\\.version$"],
+        "matchStrings": [
+          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
+        ],
+        "datasourceTemplate": "git-tags",
+        "versioningTemplate": "semver",
+        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate-source-sample.git"
       }
    
     ],
     "packageRules": [
+      {
+        "datasources": ["github-releases"],
+        "managers": ["regex"],
+        "extractVersion": "^(?<version>.*)$"
+      },
         {
           "matchDatasources": ["git-refs"],
           "addLabels": ["latest-unstable"]
+        },
+        {
+          "matchDatasources": ["git-tags"],
+          "addLabels": ["latest-stable"]
         }
       ]
   }
