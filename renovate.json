@@ -38,7 +38,7 @@
         {
           "matchDatasources": ["git-tags"],
           "addLabels": ["latest-unstable"],
-          "extractVersion": "^(services|client)-(?<version>.*)$"
+          "extractVersion": "services-(?<version>.*)$"
         }
       ]
   }
