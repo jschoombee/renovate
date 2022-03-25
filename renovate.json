@@ -21,7 +21,7 @@
       {
         "fileMatch": ["alpha\\.release\\.version$"],
         "matchStrings": [
-          "client: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\\s+extractVersion=(?<extractVersion>.*?)\n"
+          "client:\\s+(?<currentValue>.+) # renovate: Target=(?<depName>.*?)\\s+extractVersion=(?<extractVersion>.*?)\n"
         ],
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "git",
