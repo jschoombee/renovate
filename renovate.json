@@ -12,16 +12,7 @@
       {
         "fileMatch": ["alpha\\.release\\.version$"],
         "matchStrings": [
-          "services: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\\s+extractVersion=(?<extractVersion>.*?)\n"
-        ],
-        "datasourceTemplate": "git-tags",
-        "versioningTemplate": "git",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
-      },
-      {
-        "fileMatch": ["alpha\\.release\\.version$"],
-        "matchStrings": [
-          "client:\\s+(?<currentValue>.+) # renovate: Target=(?<depName>.*?)\\s+extractVersion=(?<extractVersion>.*?)\n"
+          "client:\\s+(?<currentValue>.+) # renovate: Target=(?<depName>.*?)\\s+extractVersion=(?<extractVersion>.*?)\\n"
         ],
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "git",
@@ -30,11 +21,6 @@
    
     ],
     "packageRules": [
-      {
-        "datasources": ["github-releases"],
-        "managers": ["regex"],
-        "extractVersion": "^(?<version>.*)$"
-      },
         {
           "matchDatasources": ["git-tags"],
           "addLabels": ["latest-unstable"]
