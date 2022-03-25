@@ -1,4 +1,4 @@
-client: 502ea9a0249698a3cb3587c0c88d5873cd82bf21  # renovate: Target=client-test
+client: 502ea9a0249698a3cb3587c0c88d5873cd82bf21 # renovate: Target=client-test
 services: 502ea9a0249698a3cb3587c0c88d5873cd82bf21 # renovate: Target=services-test
 
 
