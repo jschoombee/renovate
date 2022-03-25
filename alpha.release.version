@@ -1,6 +1,6 @@
 #The client version to pin for test environment releases
-client: 502ea9a0249698a3cb3587c0c88d5873cd82bf21 # renovate: Target=client-test
+client: 502ea9a0249698a3cb3587c0c88d5873cd82bf22 # renovate: Target=client-test-new extractVersion=^client-(?<version>.*)
 #The services version to pin for test environment releases
-services: abbbbbbbbbbccccccccccccccffffffffffff3 # renovate: Target=services-test
+services: abbbbbbbbbbccccccccccccccffffffffffff3 # renovate: Target=services-test-new extractVersion=^(services|client)-(?<version>.*)
 
 
