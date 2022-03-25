@@ -8,42 +8,11 @@
     "reviewers": [
       "jp.schoombee@gmail.com"
     ],
-    "regexManagers": [
-
-      {
-        "fileMatch": ["release\\.version$"],  
-        "matchStrings": [
-          "client: (?<currentDigest>.+) # renovate: Target=(?<depName>.*)\n"
-        ],
-        "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate-source-sample.git",
-        "currentValueTemplate": "develop",
-        "versioningTemplate": "git"
-      },
-
-      {
-        "fileMatch": ["release\\.version$"],  
-        "matchStrings": [
-          "services: (?<currentDigest>.+) # renovate: Target=(?<depName>.*)\n"
-        ],
-        "datasourceTemplate": "git-refs",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate-source-sample.git",
-        "currentValueTemplate": "develop",
-        "versioningTemplate": "git"
-      },
-      {
-        "fileMatch": ["oldrelease\\.version$"],
-        "matchStrings": [
-          "^(?<currentValue>.+) # renovate: Environment=(?<depName>.*)\n"
-        ],
-        "datasourceTemplate": "git-tags",
-        "versioningTemplate": "semver",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate-source-sample.git"
-      },
+    "regexManagers": [   
       {
         "fileMatch": ["alpha\\.release\\.version$"],
         "matchStrings": [
-          "services: (?<currentDigest>.+) # renovate: Target=(?<depName>.*)\n"
+          "services: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "git",
@@ -52,7 +21,7 @@
       {
         "fileMatch": ["alpha\\.release\\.version$"],
         "matchStrings": [
-          "client: (?<currentDigest>.+) # renovate: Target=(?<depName>.*)\n"
+          "client: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "git",
