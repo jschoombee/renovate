@@ -15,7 +15,7 @@
           "services: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-tags",
-        "versioningTemplate": "git",
+       
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
       },
       {
@@ -24,7 +24,7 @@
           "client: (?<currentValue>.+) # renovate: Target=(?<depName>.*)\n"
         ],
         "datasourceTemplate": "git-tags",
-        "versioningTemplate": "git",
+      
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
       }
    
@@ -36,13 +36,9 @@
         "extractVersion": "^(?<version>.*)$"
       },
         {
-          "matchDatasources": ["git-refs"],
+          "matchDatasources": ["git-tags"],
           "addLabels": ["latest-unstable"],
           "extractVersion": "^(services|client)-(?<version>.*)$"
-        },
-        {
-          "matchDatasources": ["git-tags"],
-          "addLabels": ["latest-stable"]
         }
       ]
   }
