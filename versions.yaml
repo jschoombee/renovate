@@ -4,7 +4,7 @@ variables:
   ingressNginxVersion: 4.2.1 # renovate: datasource=helm registryurl=https://kubernetes.github.io/ingress-nginx depname=ingress-nginx
   clusterSetupVersion: 0.1.0
   healthcheckVersion: 0.2.0
-  filebeatVersion: 7.17.3 # renovate: datasource=helm registryurl=https://helm.elastic.co depname=filebeat
+  filebeatVersion: 8.5.1 # renovate: datasource=helm registryurl=https://helm.elastic.co depname=filebeat
   kuredVersion: 3.0.1 # renovate: datasource=helm registryurl=https://weaveworks.github.io/kured depname=kured
   heartbeatVersion: 0.1.0
   opentelemetryCollectorVersion: 0.24.0
