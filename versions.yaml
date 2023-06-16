@@ -1,7 +1,7 @@
 # This pipeline template specifies the Helm chart versions that are deployed
 # to the cluster in the Kubernetes pipeline.
 variables:
-  ingressNginxVersion: 4.2.1 # renovate: datasource=helm registryurl=https://kubernetes.github.io/ingress-nginx depname=ingress-nginx
+  ingressNginxVersion: 4.7.0 # renovate: datasource=helm registryurl=https://kubernetes.github.io/ingress-nginx depname=ingress-nginx
   clusterSetupVersion: 0.1.0
   healthcheckVersion: 0.2.0
   filebeatVersion: 7.17.3 # renovate: datasource=helm registryurl=https://helm.elastic.co depname=filebeat
