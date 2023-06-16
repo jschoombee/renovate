@@ -24,7 +24,13 @@
         {
           "matchDatasources": ["git-tags"],
           "addLabels": ["latest-unstable"]
-        }
+        },
+          {
+      "datasources": ["github-releases"],
+      "managers": ["regex"],
+      "packageNames": ["hashicorp/terraform"],
+      "extractVersion": "^v(?<version>.*)$"
+    }
       ]
   }
   
