@@ -17,6 +17,12 @@
         "datasourceTemplate": "git-tags",
         "versioningTemplate": "git",
         "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
+      },
+      {
+        "fileMatch": ["versions\\.yaml$", "values\\.yaml$"],
+        "matchStrings": [
+          "\\w+: (?<currentValue>.*?)\\s+# renovate: datasource=(?<datasource>.*?)\\s+registryurl=(?<registryUrl>.*?) depname=(?<depName>.*?)\n"
+        ]
       }
    
     ],
