@@ -8,4 +8,4 @@ variables:
   kuredVersion: 3.0.1 # renovate: datasource=helm registryurl=https://weaveworks.github.io/kured depname=kured
   heartbeatVersion: 0.1.0
   opentelemetryCollectorVersion: 0.24.0
-  kubernetesEventExporter: 1.4.20 # renovate: datasource=helm registryurl=https://charts.bitnami.com/bitnami depname=kubernetes-event-exporter
+  kubernetesEventExporter: 1.5.2 # renovate: datasource=helm registryurl=https://charts.bitnami.com/bitnami depname=kubernetes-event-exporter
