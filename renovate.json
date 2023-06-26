@@ -46,7 +46,7 @@
       ]
     },
     {
-      "groupName": "wiz update all providers",
+      "groupName": "Wiz (all)",
       "matchDepTypes": [
         "terraform"
       ],
@@ -56,7 +56,8 @@
       ],
       "matchPackageNames": [
         "^axtongrams/wiz$"
-      ]
+      ],
+      "titleTemplate": "{{groupName}}: Update {{depName}} to {{newVersion}}"
     },
     {
       "datasources": [
