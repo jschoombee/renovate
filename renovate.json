@@ -1,42 +1,74 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["regexManagers:dockerfileVersions"],
-    "timezone": "Europe/Amsterdam",
-    "schedule": ["every weekday"],
-    "baseBranches": ["main"],
-    "gitAuthor": "RenovateBot <bot@me.com>",
-    "reviewers": [
-      "jp.schoombee@gmail.com"
-    ],
-    "regexManagers": [   
-      {
-        "fileMatch": ["alpha\\.release\\.version$"],
-        "matchStrings": [
-          "client:\\s+(?<currentValue>.+) # renovate: Target=(?<depName>.*?)\\s+extractVersion=(?<extractVersion>.*?)\\n"
-        ],
-        "datasourceTemplate": "git-tags",
-        "versioningTemplate": "git",
-        "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
-      },
-      {
-        "fileMatch": ["versions\\.yaml$", "values\\.yaml$"],
-        "matchStrings": [
-          "\\w+: (?<currentValue>.*?)\\s+# renovate: datasource=(?<datasource>.*?)\\s+registryurl=(?<registryUrl>.*?) depname=(?<depName>.*?)\n"
-        ]
-      }
-   
-    ],
-    "packageRules": [
-        {
-          "matchDatasources": ["git-tags"],
-          "addLabels": ["latest-unstable"]
-        },
-          {
-      "datasources": ["github-releases"],
-      "managers": ["regex"],
-      "packageNames": ["hashicorp/terraform"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "regexManagers:dockerfileVersions"
+  ],
+  "timezone": "Europe/Amsterdam",
+  "schedule": [
+    "every weekday"
+  ],
+  "baseBranches": [
+    "main"
+  ],
+  "gitAuthor": "RenovateBot <bot@me.com>",
+  "reviewers": [
+    "jp.schoombee@gmail.com"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "alpha\\.release\\.version$"
+      ],
+      "matchStrings": [
+        "client:\\s+(?<currentValue>.+) # renovate: Target=(?<depName>.*?)\\s+extractVersion=(?<extractVersion>.*?)\\n"
+      ],
+      "datasourceTemplate": "git-tags",
+      "versioningTemplate": "git",
+      "lookupNameTemplate": "https://jschoombee@github.com/jschoombee/renovate.git"
+    },
+    {
+      "fileMatch": [
+        "versions\\.yaml$",
+        "values\\.yaml$"
+      ],
+      "matchStrings": [
+        "\\w+: (?<currentValue>.*?)\\s+# renovate: datasource=(?<datasource>.*?)\\s+registryurl=(?<registryUrl>.*?) depname=(?<depName>.*?)\n"
+      ]
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "git-tags"
+      ],
+      "addLabels": [
+        "latest-unstable"
+      ]
+    },
+    {
+      "groupName": "wiz update all providers",
+      "matchDepTypes": [
+        "terraform"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchPackageNames": [
+        "^axtongrams/wiz$"
+      ]
+    },
+    {
+      "datasources": [
+        "github-releases"
+      ],
+      "managers": [
+        "regex"
+      ],
+      "packageNames": [
+        "hashicorp/terraform"
+      ],
       "extractVersion": "^v(?<version>.*)$"
     }
-      ]
-  }
-  
+  ]
+}
