@@ -4,7 +4,7 @@ terraform {
   required_providers {
     wiz = {
       source  = "axtongrams/wiz"
-      version = "1.1.1" # renovate: depName=wiz-dummy-module
+      version = "1.1.4" # renovate: depName=wiz-dummy-module
       meta = {
         depName = "wiz-dummy-module"
         depname = "foo"
