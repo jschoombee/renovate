@@ -5,6 +5,9 @@ terraform {
     wiz = {
       source  = "axtongrams/wiz"
       version = "1.1.3"
+      meta = {
+        depName = "wiz-dummy"
+      }
     }
     azuread = {
       source  = "hashicorp/azuread"
