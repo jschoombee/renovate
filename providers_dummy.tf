@@ -5,9 +5,10 @@ terraform {
     wiz = {
       source  = "axtongrams/wiz"
       version = "1.1.3" # renovate: depName=wiz-dummy-module
-      # meta = {
-      #   depName = "wiz-dummy"
-      # }
+      meta = {
+        depName = "wiz-dummy-module"
+        depname = "foo"
+      }
     }
     # azuread = {
     #   source  = "hashicorp/azuread"
